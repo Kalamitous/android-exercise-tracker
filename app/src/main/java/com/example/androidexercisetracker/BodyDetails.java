@@ -4,11 +4,10 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainMenu extends AppCompatActivity {
+public class BodyDetails extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.main_menu);
+        setContentView(R.layout.body_details);
     }
 }
