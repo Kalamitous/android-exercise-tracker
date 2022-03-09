@@ -38,7 +38,8 @@
 
         <activity
             android:name=".MainMenu"
-            android:exported="true">
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
