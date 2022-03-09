@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/calores_burned"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+    <EditText
+        android:id="@+id/background"
+        android:layout_width="421dp"
+        android:layout_height="748dp"
+        android:background="#ADC4E6"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/box1"
+            android:layout_width="358dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rounded_textview"
+            android:padding="6dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/box"
+            android:layout_width="358dp"
+            android:layout_height="320dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="26dp"
+            android:background="@drawable/rounded_textview"
+            android:padding="6dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/box1" />
+
+        <TextView
+            android:id="@+id/activityBox1"
+            android:layout_width="337dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="264dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/rounded_textview2"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="Running"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/activityBox2"
+            android:layout_width="337dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="352dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/rounded_textview2"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="Basketball"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/activityBox3"
+            android:layout_width="337dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="436dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/rounded_textview2"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="Yoga"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="-4dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="-159dp" />
+
+        <TextView
+            android:id="@+id/thisWeekTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="277dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="This Week"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/recentActivityTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Recent Activities"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/activityBox1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/box1"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/caloriesTxt"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="10dp"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="895 cal "
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thisWeekTxt" />
+
+        <EditText
+            android:id="@+id/exerciseTxt"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="67dp"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="5h25m"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/caloriesTxt"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/recordBtn"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginBottom="52dp"
+            android:background="@drawable/rounded_textview2"
+            android:backgroundTint="@color/white"
+            android:text="Start Recording"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/bodyDetailsBtn"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="47dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="52dp"
+            android:background="@drawable/rounded_textview2"
+            android:backgroundTint="@color/white"
+            android:text="Body Details"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/recordBtn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
