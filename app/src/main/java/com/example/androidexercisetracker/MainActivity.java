@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.androidexercisetracker.databinding.ActivityMapsBinding;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -37,8 +36,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     public TextView caloriesValue;
 
     public CountDownTimer stepsCounter;
-    public CountDownTimer distanceCounter;
-    public CountDownTimer caloriesCounter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
