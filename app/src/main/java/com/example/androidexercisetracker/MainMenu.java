@@ -1,4 +1,7 @@
 package com.example.androidexercisetracker;
 
-public class MainMenu {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainMenu extends AppCompatActivity {
+
 }
