@@ -4,93 +4,275 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D1E4FF"
+    android:background="#D6E1FD"
     tools:context=".ExerciseMenu">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="306dp"
-        android:layout_height="460dp"
-        app:cardCornerRadius="25dp"
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.446">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-
-        <Button
-            android:id="@+id/runningButton"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="95dp"
-
-            android:layout_marginTop="45dp"
-            android:text="Running"
-            android:textColor="#000000"
-            app:backgroundTint="#D6F0FF"
-            app:iconTint="#FFFFFF"
-            app:strokeColor="#92AAB5"
-            app:strokeWidth="1dp" />
-
-        <Button
-            android:id="@+id/bikingButton"
-            android:layout_width="match_parent"
-            android:layout_height="95dp"
-            android:layout_marginTop="125dp"
-            android:text="Biking"
-            android:textColor="#000000"
-            app:backgroundTint="#D6F0FF"
-            app:iconTint="#FFFFFF"
-            app:strokeColor="#92AAB5"
-            app:strokeWidth="1dp" />
-
-        <Button
-            android:id="@+id/rowingButton"
-            android:layout_width="match_parent"
-            android:layout_height="95dp"
-            android:layout_marginTop="205dp"
-            android:text="Rowing"
-            android:textColor="#000000"
-            app:backgroundTint="#D6F0FF"
-            app:iconTint="#FFFFFF"
-            app:strokeColor="#92AAB5"
-            app:strokeWidth="1dp" />
-
-        <Button
-            android:id="@+id/freeWeightsButton"
-            android:layout_width="match_parent"
-            android:layout_height="95dp"
-            android:layout_marginTop="290dp"
-            android:text="Free Weights"
-            android:textColor="#000000"
-            app:backgroundTint="#D6F0FF"
-            app:iconTint="#FFFFFF"
-            app:strokeColor="#92AAB5"
-            app:strokeWidth="1dp" />
-
-        <Button
-            android:id="@+id/stairClimbingButton"
-            android:layout_width="match_parent"
-            android:layout_height="95dp"
-            android:layout_marginTop="370dp"
-            android:text="Stair Climbing"
-            android:textColor="#000000"
-            app:backgroundTint="#D6F0FF"
-            app:iconTint="#FFFFFF"
-            app:strokeColor="#92AAB5"
-            app:strokeWidth="1dp" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Select an Activity"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:translationX="60px"
-            android:translationY="30px" />
-    </androidx.cardview.widget.CardView>
+            android:clickable="false"
+            android:orientation="vertical">
 
+            <FrameLayout
+                android:id="@+id/runningButton"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#FFFFFF">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/running" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="20dp"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/caret" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Running"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <FrameLayout
+                android:id="@+id/bikingButton"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#FFFFFF">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/bikingButton_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/biking" />
+
+                    <ImageView
+                        android:id="@+id/bikingButton_imageView2"
+                        android:layout_width="20dp"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/caret" />
+
+                    <TextView
+                        android:id="@+id/bikingButton_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Biking"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/bikingButton_imageView"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <FrameLayout
+                android:id="@+id/rowingButton"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#FFFFFF">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/rowingButton_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/rowing" />
+
+                    <ImageView
+                        android:id="@+id/rowingButton_imageView2"
+                        android:layout_width="20dp"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/caret" />
+
+                    <TextView
+                        android:id="@+id/rowingButton_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Rowing"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/rowingButton_imageView"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <FrameLayout
+                android:id="@+id/weightsButton"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#FFFFFF">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/weightsButton_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/weights" />
+
+                    <ImageView
+                        android:id="@+id/weightsButton_imageView2"
+                        android:layout_width="20dp"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/caret" />
+
+                    <TextView
+                        android:id="@+id/weightsButton_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Free Weights"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/weightsButton_imageView"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <FrameLayout
+                android:id="@+id/stairsButton"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#FFFFFF">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/stairsButton_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/stairs" />
+
+                    <ImageView
+                        android:id="@+id/stairsButton_imageView2"
+                        android:layout_width="20dp"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/caret" />
+
+                    <TextView
+                        android:id="@+id/stairsButton_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Stair Climbing"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/stairsButton_imageView"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
