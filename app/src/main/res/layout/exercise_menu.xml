@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1E4FF"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="306dp"
+        android:layout_height="460dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.446">
+
+
+        <Button
+            android:id="@+id/runningButton"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+
+            android:layout_marginTop="45dp"
+            android:text="Running"
+            android:textColor="#000000"
+            app:backgroundTint="#D6F0FF"
+            app:iconTint="#FFFFFF"
+            app:strokeColor="#92AAB5"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/bikingButton"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginTop="125dp"
+            android:text="Biking"
+            android:textColor="#000000"
+            app:backgroundTint="#D6F0FF"
+            app:iconTint="#FFFFFF"
+            app:strokeColor="#92AAB5"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/rowingButton"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginTop="205dp"
+            android:text="Rowing"
+            android:textColor="#000000"
+            app:backgroundTint="#D6F0FF"
+            app:iconTint="#FFFFFF"
+            app:strokeColor="#92AAB5"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/freeWeightsButton"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginTop="290dp"
+            android:text="Free Weights"
+            android:textColor="#000000"
+            app:backgroundTint="#D6F0FF"
+            app:iconTint="#FFFFFF"
+            app:strokeColor="#92AAB5"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/stairClimbingButton"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginTop="370dp"
+            android:text="Stair Climbing"
+            android:textColor="#000000"
+            app:backgroundTint="#D6F0FF"
+            app:iconTint="#FFFFFF"
+            app:strokeColor="#92AAB5"
+            app:strokeWidth="1dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select an Activity"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:translationX="60px"
+            android:translationY="30px" /><![CDATA[
+
+
+
+        "
+            />
+
+
+
+
+
+        "
+            />
+
+
+    ]]>
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
