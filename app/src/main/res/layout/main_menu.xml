@@ -7,6 +7,8 @@
     android:layout_height="match_parent"
     tools:context=".MainMenu">
 
+
+
     <EditText
         android:id="@+id/background"
         android:layout_width="421dp"
@@ -21,28 +23,12 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/box1"
-            android:layout_width="358dp"
-            android:layout_height="150dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="44dp"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/rounded_textview"
-            android:padding="6dp"
-            android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
             android:id="@+id/box"
             android:layout_width="358dp"
             android:layout_height="320dp"
             android:layout_gravity="center"
             android:layout_marginStart="27dp"
-            android:layout_marginTop="22dp"
+            android:layout_marginTop="27dp"
             android:layout_marginEnd="26dp"
             android:background="@drawable/rounded_textview"
             android:padding="6dp"
@@ -50,6 +36,21 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/box1" />
+
+        <TextView
+            android:id="@+id/box1"
+            android:layout_width="358dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="27dp"
+            android:background="@drawable/rounded_textview"
+            android:padding="6dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/activityBox1"
@@ -151,37 +152,6 @@
             app:layout_constraintTop_toBottomOf="@+id/box1"
             app:layout_constraintVertical_bias="1.0" />
 
-        <EditText
-            android:id="@+id/caloriesTxt"
-            android:layout_width="120dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="59dp"
-            android:layout_marginTop="10dp"
-            android:editable="false"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="895 cal "
-            android:textAlignment="center"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/thisWeekTxt" />
-
-        <EditText
-            android:id="@+id/exerciseTxt"
-            android:layout_width="120dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="45dp"
-            android:layout_marginTop="96dp"
-            android:layout_marginEnd="67dp"
-            android:editable="false"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="5h25m"
-            android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/caloriesTxt"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <Button
             android:id="@+id/recordBtn"
             android:layout_width="150dp"
@@ -210,6 +180,42 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/recordBtn" />
+
+        <TextView
+            android:id="@+id/exerciseTxt"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="98dp"
+            android:layout_marginEnd="83dp"
+            android:editable="false"
+            android:gravity="center"
+            android:text="5h23m"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/caloriesTxt"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/caloriesTxt"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="11dp"
+            android:editable="false"
+            android:gravity="center"
+            android:text="865 cal"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thisWeekTxt" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

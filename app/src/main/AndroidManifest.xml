@@ -38,6 +38,8 @@
 
         <activity
             android:name=".MainMenu"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden">
             android:exported="true">
         </activity>
 
