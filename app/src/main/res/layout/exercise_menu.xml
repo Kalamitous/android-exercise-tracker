@@ -260,6 +260,7 @@
                         android:id="@+id/stairsButton_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
                         android:text="Stair Climbing"
                         android:textColor="@color/black"
                         android:textSize="20sp"
