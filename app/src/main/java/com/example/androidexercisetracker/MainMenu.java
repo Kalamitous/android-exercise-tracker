@@ -10,8 +10,8 @@ public class MainMenu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.main_menu);
+        getSupportActionBar().setTitle("Exercise Tracker");
     }
 
     public void onRecordActivity(View v) {

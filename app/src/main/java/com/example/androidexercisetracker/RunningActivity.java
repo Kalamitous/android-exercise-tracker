@@ -76,6 +76,7 @@ public class RunningActivity extends AppCompatActivity implements OnMapReadyCall
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setTitle("Running");
     }
 
     @Override

@@ -30,6 +30,7 @@ public class ExerciseMenu extends AppCompatActivity {
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setTitle("Exercise Menu");
     }
 
     @Override

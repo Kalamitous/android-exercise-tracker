@@ -17,6 +17,7 @@ public class BodyDetails extends AppCompatActivity {
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setTitle("Body Details");
     }
 
     @Override
