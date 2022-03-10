@@ -42,7 +42,8 @@
             android:onClick="onBodyDetails"
             android:text="Enter\nBody Details"
             android:textColor="@android:color/black"
-            app:backgroundTint="@color/white" />
+            app:backgroundTint="@color/white"
+            />
 
     </LinearLayout>
 
