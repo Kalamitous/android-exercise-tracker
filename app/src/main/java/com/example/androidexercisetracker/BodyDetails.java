@@ -6,10 +6,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Optional;
 
 public class BodyDetails extends AppCompatActivity {
     EditText nameInput;
@@ -79,33 +82,54 @@ public class BodyDetails extends AppCompatActivity {
         //Name
         nameInput = findViewById(R.id.weightInputTxt);
         String strNewName = nameInput.getText().toString();
-        User.updateName(java.util.Optional.of(strNewName));
 
-        setName();
+        if (!strNewName.matches("")) {
+            User.updateName(java.util.Optional.of(strNewName));
+            setName();
+
+        }
+
 
         //Weight
         weightInput = findViewById(R.id.heightInputTxt);
         String strNewWeight = weightInput.getText().toString();
-        int intNewWeight = Integer.parseInt(strNewWeight);
-        User.updateWeight(java.util.Optional.of(intNewWeight));
 
-        setWeight();
+        if (!strNewWeight.matches("")) {
+            int intNewWeight = Integer.parseInt(strNewWeight);
+            User.updateWeight(java.util.Optional.of(intNewWeight));
+
+            setWeight();
+
+        }
 
         //Height
         heightInput = findViewById(R.id.genderInputTxt3);
         String strNewHeight = heightInput.getText().toString();
-        int intNewHeight = Integer.parseInt(strNewHeight);
-        User.updateHeight(java.util.Optional.of(intNewHeight));
 
-        setHeight();
+        if (!strNewHeight.matches("")) {
+            int intNewHeight = Integer.parseInt(strNewHeight);
+            User.updateHeight(java.util.Optional.of(intNewHeight));
+            setHeight();
+
+        }
+
+
 
         //Age
         ageInput = findViewById(R.id.genderInputTxt);
         String strNewAge = ageInput.getText().toString();
-        int intNewAge = Integer.parseInt(strNewAge);
-        User.updateAge(java.util.Optional.of(intNewAge));
 
-        setAge();
+        if (!strNewAge.matches("")) {
+            int intNewAge = Integer.parseInt(strNewAge);
+            User.updateAge(java.util.Optional.of(intNewAge));
+
+            setAge();
+
+        }
+
+
+        Toast success = Toast.makeText(this,  "Body details successfully updated", Toast.LENGTH_SHORT);
+        success.show();
 
     }
 
