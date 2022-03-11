@@ -27,6 +27,8 @@
             android:onClick="onRecordActivity"
             android:text="Record\nActivity"
             android:textColor="@android:color/black"
+            android:drawableLeft="@drawable/record"
+            android:textSize="12dp"
             app:backgroundTint="@color/white" />
 
         <Space
@@ -42,6 +44,8 @@
             android:onClick="onBodyDetails"
             android:text="Enter\nBody Details"
             android:textColor="@android:color/black"
+            android:drawableLeft="@drawable/health"
+            android:textSize="12dp"
             app:backgroundTint="@color/white"
             />
 

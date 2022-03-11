@@ -15,7 +15,7 @@
         android:onClick="onClick"
         android:text="Start Recording"
         android:textColor="@android:color/black"
-        android:drawableLeft="@android:drawable/radiobutton_on_background"
+        android:drawableLeft="@drawable/record"
         app:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
